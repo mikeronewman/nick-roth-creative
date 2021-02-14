@@ -11,8 +11,12 @@
         height: 8vh;
     }
 
+    nav {
+        align-self: center;
+        display: flex;
+    }
+
     &__title {
-        font-size: $font-size-h5;
         align-self: center;
     }
 
@@ -21,10 +25,21 @@
         font-size: 0.833rem;
     }
 
+    &__desktoplinks {
+        align-self: center;
+        list-style: none;
+        font-family: $font-heading;  
+    }
+
+    &__desktoplinks:not(last-child) {
+        margin-left: 2rem;
+    }
+
 }
 
 .hamburger {
     align-self: center;
+    margin-left: 2rem;
 
     span {
         display: block;

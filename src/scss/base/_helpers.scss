@@ -1,0 +1,17 @@
+@media screen and (min-width: $bp-desktop) {
+    .hidden-largescrn {
+        // code to hide an element on a large screen
+        display: none;
+    }
+}
+
+.display-largescrn {
+    // code to display an element ONLY on a large screen
+    display: none;
+}
+
+@media screen and (min-width: $bp-desktop) {
+    .display-largescrn {
+        display: block;
+    }
+}

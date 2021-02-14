@@ -6,6 +6,12 @@
 
 @media screen and (min-width: $bp-desktop) {
     .wrapper {
-        max-width: 980px;
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: $bp-desktop-large) {
+    .wrapper {
+        max-width: 1360px;
     }
 }

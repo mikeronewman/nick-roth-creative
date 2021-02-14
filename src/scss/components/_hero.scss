@@ -27,6 +27,12 @@
     
     &__button {
         position: absolute;
-        bottom: 2rem;
+        bottom: 4rem;
+    }
+}
+
+@media screen and (min-width: $bp-desktop) {
+    .hero__headline {
+        font-size: $font-size-biggest;
     }
 }
