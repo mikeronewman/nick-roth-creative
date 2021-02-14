@@ -1,0 +1,32 @@
+header {
+    background-color: $color-blue-dark;
+    color: $color-light;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 8vh;
+    }
+
+
+}
+
+.header__title {
+    font-size: $font-size-h5;
+    align-self: center;
+}
+
+.hamburger {
+    align-self: center;
+
+    span {
+        display: block;
+        width: 27px;
+        height: 2px;
+        background-color: $color-light;
+    }
+
+    span:not(:last-child) {
+        margin-bottom: 6px;
+    }
+}
