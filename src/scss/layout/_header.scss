@@ -1,6 +1,9 @@
 header {
-    background-color: $color-blue-dark;
+    width: 100%;
+    position: absolute;
+    top: 0;
     color: $color-light;
+    z-index: 100;
 
     .wrapper {
         display: flex;

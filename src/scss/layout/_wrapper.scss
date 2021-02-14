@@ -3,3 +3,9 @@
     max-width: 90%;
     margin: 0 auto;
 }
+
+@media screen and (min-width: $bp-desktop) {
+    .wrapper {
+        max-width: 980px;
+    }
+}
