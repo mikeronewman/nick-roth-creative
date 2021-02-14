@@ -15,11 +15,13 @@
 </head>
 <body>
 
-<header>
+<header class="header">
     <div class="wrapper">
         <h1 class="header__title">Nick Roth | Creative</h1>
 
         <!-- TODO: Add contact button -->
+        
+        <a class="button header__contactbtn" href="#">CONTACT</a>
 
         <nav class="hamburger">
             <span></span>
@@ -36,10 +38,12 @@ Hero Section - Contains only:
                     * Explore button to scroll down page
 ========================================================== -->
 <section class="hero">
+
+    <video class="hero__bgvideo" preload="true" autoplay loop muted>
+        <source src="videos/Background_video_1280x720.mp4" type="video/mp4">
+    </video>
+
     <div class="wrapper">
-        <video class="hero__bgvideo" preload="true" autoplay loop muted>
-            <source src="videos/Background_video_1280x720.mp4" type="video/mp4">
-        </video>
 
         <h1 class="hero__headline">Picture Your Perfect Day</h1>
 
@@ -48,9 +52,21 @@ Hero Section - Contains only:
     </div>
 </section>
 
-<section class="home__portfolio">
-    
+<section class="portfolio wrapper">
+    <h2 class="portfolio__headline">My Work</h2>
+    <img class="portfolio__image" src="/img/portfolio-1.jpg" alt="">
+    <img class="portfolio__image" src="/img/portfolio-2.jpg" alt="">
+    <img class="portfolio__image" src="/img/portfolio-3.jpg" alt="">
+    <img class="portfolio__image" src="/img/portfolio-4.jpg" alt="">
+    <img class="portfolio__image" src="/img/portfolio-5.jpg" alt="">
+    <img class="portfolio__image" src="/img/portfolio-6.jpg" alt="">
 </section>
+
+
+
+<main>
+    <h2>Testimonials</h2>
+</main>
 
 
 
