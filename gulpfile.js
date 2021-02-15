@@ -11,7 +11,7 @@ function cssTask() {
         .pipe(sass({ outputStyle: 'compressed'})).on('error', sass.logError)
         .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(sourcemaps.write('.'))
-        .pipe(dest('./build/css'))
+        .pipe(dest('css'))
 };
 
 function watchFiles() {
