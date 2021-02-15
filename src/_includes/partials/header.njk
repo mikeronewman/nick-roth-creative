@@ -1,9 +1,9 @@
 <header class="header">
     <div class="wrapper">
-        <h2 class="header__title">Nick Roth | Creative</h2>
+        <a class="header__title" href="/"><h2>Nick Roth | Creative</h2></a>
         
         <nav>
-            <a class="button header__contactbtn" href="#">CONTACT</a>
+            <a class="button header__contactbtn" href="/contact">CONTACT</a>
 
             {% set navPages = collections.all | eleventyNavigation %}
             {%- for entry in navPages %}

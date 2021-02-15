@@ -1,7 +1,5 @@
 ---
-eleventyNavigation:
-    key: Contact
-    title: Contact
+layout: contact.njk
 ---
 
 # Contact Me
