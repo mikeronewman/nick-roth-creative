@@ -19,6 +19,7 @@
 
     &__title {
         align-self: center;
+        cursor: pointer;
     }
 
     &__contactbtn {
@@ -41,15 +42,32 @@
 .hamburger {
     align-self: center;
     margin-left: 2rem;
+    cursor: pointer;
 
     span {
         display: block;
         width: 27px;
         height: 2px;
         background-color: $color-light;
+        transition: all 0.4s ease-in;
     }
 
     span:not(:last-child) {
         margin-bottom: 6px;
+    }
+}
+
+.hamburger.open {
+    span:nth-child(1) {
+        transform: translateY(8px) rotate(135deg);
+    }
+
+    span:nth-child(2) {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+
+    span:nth-child(3) {
+        transform: translateY(-8px) rotate(-135deg);
     }
 }

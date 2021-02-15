@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
     // Add passthrough copy to build folder
     eleventyConfig.addPassthroughCopy("img");
     eleventyConfig.addPassthroughCopy("css");
+    eleventyConfig.addPassthroughCopy("js");
 
     return {
         dir: {
