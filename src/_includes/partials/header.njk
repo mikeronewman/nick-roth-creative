@@ -5,15 +5,19 @@
         <nav>
             <a class="button header__contactbtn" href="#">CONTACT</a>
 
-            {# <div class="hamburger hidden-largescrn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div> #}
+            {% set navPages = collections.all | eleventyNavigation %}
+            {%- for entry in navPages %}
 
-            {# <a class="header__desktoplinks display-largescrn" href="#"><li>ABOUT</li></a>
-            <a class="header__desktoplinks display-largescrn" href="#"><li>PORTFOLIO</li></a>
-            <a class="header__desktoplinks display-largescrn" href="#"><li>TESTIMONIALS</li></a> #}
+                <a class="header__desktoplinks display-largescrn" href="{{ entry.url | url }}">{{ entry.title }}</a>
+
+            {%- endfor %}
+
+            <div class="hamburger hidden-largescrn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
         </nav>
     </div>
 </header>
