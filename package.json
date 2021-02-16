@@ -18,5 +18,8 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "postcss": "^8.2.6"
+  },
+  "dependencies": {
+    "netlify-cms-app": "^2.14.22"
   }
 }
