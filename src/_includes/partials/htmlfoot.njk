@@ -14,11 +14,13 @@
         // Hamburger and mobile menu animations
         const hamburger = document.getElementById('hamburger');
         const overlay = document.getElementById('overlay');
+        const header = document.getElementById('header');
 
         hamburger.onclick = function() {
             console.log('clicked!!');
             hamburger.classList.toggle('open');
             overlay.classList.toggle('opened');
+            header.classList.toggle('blurred');
         }
     </script>
 </body>
