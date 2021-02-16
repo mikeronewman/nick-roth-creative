@@ -4,6 +4,7 @@
     top: 0;
     color: $color-light;
     background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
     z-index: 100;
 
     .wrapper {
@@ -18,6 +19,7 @@
     }
 
     &__title {
+        color: $color-blue-dark;
         align-self: center;
         cursor: pointer;
     }

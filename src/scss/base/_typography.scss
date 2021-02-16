@@ -39,6 +39,10 @@ h1 {
     .header__title h2 {
         font-size: $font-size-h4;
     }
+
+    .portfolio__description {
+        font-size: $font-size-h2;
+    }
 }
 
 @media screen and (min-width: $bp-desktop) {

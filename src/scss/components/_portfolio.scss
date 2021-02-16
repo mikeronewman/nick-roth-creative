@@ -1,23 +1,22 @@
 .portfolio {
     margin: 4rem auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto 1fr 1fr 1fr 1fr;
+    text-align: center;
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin-top: 4rem;
+    }
 
     .button {
-        grid-column: 2 / 4;
         margin-bottom: 5rem;
     }
 
-    &__headline {
-        font-size: $font-size-h1;
-        margin: 2rem 0;
-    }
-
     &__description {
-        grid-column: 1 / 5;
+        max-width: 600px;
         text-align: center;
-        margin-bottom: 2rem;
+        margin: 0 auto 4rem auto;
     }
 
     &__image:nth-child(odd) {
@@ -36,6 +35,5 @@
     &__image:not(:first-child) {
         margin-top: -1rem;
     }
-
-
 }
+
