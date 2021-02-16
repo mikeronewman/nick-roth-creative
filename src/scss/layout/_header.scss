@@ -22,6 +22,12 @@
         cursor: pointer;
     }
 
+    &__title:hover,
+    &__title:active,
+    &__title:focus {
+        color: $color-blue-dark;
+    }
+
     &__contactbtn {
         align-self: center;
         font-size: 0.833rem;

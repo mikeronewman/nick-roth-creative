@@ -17,8 +17,16 @@ body {
 
 a {
     color: inherit;
+    outline: none;
     text-decoration: none;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: $color-blue-dark;
 }
 
 img {

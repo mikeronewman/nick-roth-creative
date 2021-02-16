@@ -6,8 +6,27 @@
     border-radius: 15px;
 }
 
+.button:hover,
+.button:active,
+.button:focus {
+    color: $color-blue-dark;
+    border-color: $color-blue-dark;
+}
+
 @media screen and (min-width: $bp-desktop) {
     .button {
         padding: 10px 15px;
     }
+}
+
+.button--blue {
+    color: $color-blue-dark;
+    border-color: $color-blue-dark;
+}
+
+.button--blue:hover,
+.button--blue:active,
+.button--blue:focus {
+    color: $color-blue-light;
+    border-color: $color-blue-light;
 }

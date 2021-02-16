@@ -1,13 +1,37 @@
 .portfolio {
+    margin-top: 4rem;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr 1fr 1fr 1fr;
+
+    .button {
+        grid-column: 2 / 4;
+        margin-bottom: 3rem;
+    }
 
     &__headline {
         font-size: $font-size-h1;
         margin: 2rem 0;
     }
 
+    &__description {
+        grid-column: 1 / 5;
+        margin-bottom: 1rem;
+    }
+
+    &__image:nth-child(odd) {
+        grid-column: 1 / 4;
+    }
+
+    &__image:nth-child(even) {
+        grid-column: 2 / 5;
+    }
+
     &__image {
         margin: 1rem 0;
+        box-shadow: 3px 3px 3px 1px (rgba(0,0,0,0.2));
     }
+
 
 }
