@@ -6,7 +6,7 @@
 
     .button {
         grid-column: 2 / 4;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
     }
 
     &__headline {
@@ -15,21 +15,26 @@
     }
 
     &__description {
-        grid-column: 1 / 5;
-        margin-bottom: 1rem;
+        grid-column: 1 / 6;
+        text-align: center;
+        margin-bottom: 2rem;
     }
 
     &__image:nth-child(odd) {
-        grid-column: 1 / 4;
+        grid-column: 2 / 5;
+        box-shadow: 3px 3px 3px (rgba(0,0,0,0.2)),
+                    -3px -3px 3px (rgba(0,0,0,0.2));
     }
 
     &__image:nth-child(even) {
-        grid-column: 2 / 5;
+        grid-column: 1 / 4;
+        box-shadow: -3px 3px 3px (rgba(0,0,0,0.2)),
+                    3px -3px 3px (rgba(0,0,0,0.2));
+        
     }
 
-    &__image {
-        margin: 1rem 0;
-        box-shadow: 3px 3px 3px 1px (rgba(0,0,0,0.2));
+    &__image:not(:first-child) {
+        margin-top: -1rem;
     }
 
 
