@@ -14,9 +14,9 @@
     }
 
     &__description {
-        max-width: 600px;
         text-align: center;
         margin: 0 auto 4rem auto;
+        width: 200px;
     }
 
     &__image:nth-child(odd) {
@@ -37,3 +37,11 @@
     }
 }
 
+@media screen and (min-width: $bp-tablet) {
+    .portfolio {
+
+        &__description {
+            width: 600px;
+        }
+    }
+}
