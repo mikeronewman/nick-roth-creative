@@ -2,3 +2,14 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 media_folder: "images/uploads" #Media files will be stored in the repo under images/uploads
+media_library: # add cloudinary files to netflify cms
+  name: cloudinary
+  config:
+    cloud_name: dnnv743v6
+    api_key: 126276213761666
+# Cloudinary image field
+fields:
+  - label: 'Photos'
+    name: 'image'
+    widget: 'image'
+    media_folder: '/images/uploads'
