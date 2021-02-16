@@ -1,10 +1,12 @@
 .button {
     font-family: $font-heading;
     color: $color-light;
+    text-align: center;
     border: 2px solid $color-light;
     padding: 5px 15px;
     border-radius: 15px;
     box-shadow: 2px 2px 2px 1px (rgba(0,0,0,0.3));
+    transition: translateY 0.1s;
 }
 
 .button:hover,
@@ -12,6 +14,10 @@
 .button:focus {
     color: $color-blue-dark;
     border-color: $color-blue-dark;
+}
+
+.button:active {
+    transform: translateY(2px);
 }
 
 @media screen and (min-width: $bp-desktop) {

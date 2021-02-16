@@ -1,0 +1,30 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    right: -500px;
+    height: 100vh;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    color: $color-blue-dark;
+    transition: all 0.5s ease-in;
+
+    &__links {
+        font-family: $font-heading;
+        font-size: $font-size-h4;
+        text-transform: uppercase;
+        margin-right: 2rem;
+    }
+
+    &__links:not(:last-child) {
+        margin-bottom: 4rem;
+    }
+}
+
+.overlay.opened {
+    transform: translateX(-500px);
+}

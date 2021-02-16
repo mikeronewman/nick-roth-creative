@@ -5,18 +5,30 @@
         <nav>
             <a class="button header__contactbtn" href="/contact">CONTACT</a>
 
+            <nav class="display-largescreen">
             {% set navPages = collections.all | eleventyNavigation %}
             {%- for entry in navPages %}
 
                 <a class="header__desktoplinks display-largescrn" href="{{ entry.url | url }}">{{ entry.title }}</a>
 
             {%- endfor %}
+            </nav>
 
             <div class="hamburger hidden-largescrn" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+
+            <nav class="overlay hidden-largescrn" id="overlay">
+                {% set navePages = collections.all | eleventyNavigation %}
+                {%- for entry in navPages %}
+
+                    <a class="overlay__links hidden-largescrn" href="{{ entry.url | url }}">{{ entry.title }}</a>
+
+                {%- endfor %}                
+
+            </nav>
 
         </nav>
     </div>

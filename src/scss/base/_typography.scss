@@ -1,6 +1,6 @@
 // Variables for Google Fonts font stacks
 $font-heading: 'Raleway', sans-serif;
-$font-body: 'Montsterrat', sans-serif; 
+$font-body: 'Bitter', serif; 
 
 // Variables for type scale
 $font-size-biggest: 2.986rem;
@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-family: $font-body;
+    font-weight: 300;
     line-height: 1.6;
 }
 

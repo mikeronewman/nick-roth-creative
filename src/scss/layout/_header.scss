@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     color: $color-light;
-    background-color: rgba(51,51,51,0.3);
+    background-color: rgba(255, 255, 255, .15);
     z-index: 100;
 
     .wrapper {
@@ -49,6 +49,7 @@
     align-self: center;
     margin-left: 2rem;
     cursor: pointer;
+    z-index: 1000;
 
     span {
         display: block;
@@ -64,12 +65,15 @@
 }
 
 .hamburger.open {
+    span {
+        background-color: $color-blue-dark;
+    }
+
     span:nth-child(1) {
         transform: translateY(8px) rotate(135deg);
     }
 
     span:nth-child(2) {
-        transform: translateX(10px);
         opacity: 0;
     }
 
