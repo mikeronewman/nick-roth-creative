@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+
+    <!-- Add google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <!-- Add author styles -->
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <!-- Script to enable cms user login -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+    <header class="header blurred" id="header">
+        <div class="wrapper">
+            <a class="header__title" href="/"><h2>Nick Roth | Creative</h2></a>
+            
+            <nav>
+                <a class="button header__contactbtn" href="/contact">CONTACT</a>
+
+                <nav class="display-largescreen">
+                {% set navPages = collections.all | eleventyNavigation %}
+                {%- for entry in navPages %}
+
+                    <a class="header__desktoplinks display-largescrn" href="{{ entry.url | url }}">{{ entry.title }}</a>
+
+                {%- endfor %}
+                </nav>
+
+                <div class="hamburger hidden-largescrn" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <nav class="overlay hidden-largescrn" id="overlay">
+                    {% set navePages = collections.all | eleventyNavigation %}
+                    {%- for entry in navPages %}
+
+                        <a class="overlay__links hidden-largescrn" href="{{ entry.url | url }}">{{ entry.title }}</a>
+
+                    {%- endfor %}                
+
+                </nav>
+
+            </nav>
+        </div>
+    </header>
+
+    {{ content | safe }}
+
+    <footer class="footer">
+
+        <p>&copy; 2021 nickrothcreative.com</p>
+        
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+
+        // Hamburger and mobile menu animations
+        const hamburger = document.getElementById('hamburger');
+        const overlay = document.getElementById('overlay');
+        const header = document.getElementById('header');
+
+        hamburger.onclick = function() {
+            console.log('clicked!!');
+            hamburger.classList.toggle('open');
+            overlay.classList.toggle('opened');
+            header.classList.toggle('blurred');
+        }
+    </script>
+</body>
+</html>
