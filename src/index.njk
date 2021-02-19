@@ -23,21 +23,24 @@ layout: layouts/base.njk
 <main class="about" id="about">
     <div class="wrapper">
 
-        <h2 class="about__description">{{ description }}</h2>
+        <h2 class="about__description">{{ description | makeUppercase }}</h2>
 
         <p class="about__statement">Our passion and love for documenting weddings has grown after each and every one. We are creative minded individuals that have an eye for capturing special moments before they even happen. It requires a lot to plan a wedding and we are here to make this of the process simple for you!</p>
 
     </div>
 </main>
 
-<section class="portfolio">
-    <a class="portfolio__link" href="#">
-        <h3 class="portfolio__title">Weddings</h3>
+
+<section class="portfolio wrapper">
+    <h3 class="portfolio__title">- GALLERIES -</h3>
+    <a class="portfolio__link portfolio__link--weddings" href="#">
+        <h4 class="portfolio__link__text">WEDDINGS</h4>
         <img class="portfolio__image" src="https://res.cloudinary.com/dnnv743v6/image/upload/v1613442292/CLE_8152_idcy9r.jpg" alt="">
     </a>
-    <a class="portfolio__link" href="#">
-        <h3 class="portfolio__title">Video</h3>
+    <a class="portfolio__link portfolio__link--engagements" href="#">
+        <h4 class="portfolio__link__text">ENGAGEMENTS</h4>
         <img class="portfolio__image" src="https://res.cloudinary.com/dnnv743v6/image/upload/v1613442237/CLE_0387_valv30.jpg" alt="">
     </a>
 </section>
+
 

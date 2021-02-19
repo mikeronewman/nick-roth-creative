@@ -2,7 +2,6 @@
     width: 100%;
     position: fixed;
     top: 0;
-    color: $color-light;
     background-color: rgba(230, 223, 208, .20);
     backdrop-filter: blur(4px);
 
@@ -25,15 +24,10 @@
         cursor: pointer;
     }
 
-    &__title:hover,
-    &__title:active,
-    &__title:focus {
-        color: $color-blue-dark;
-    }
-
     &__contactbtn {
         align-self: center;
         font-size: 0.833rem;
+        color: $color-light;
     }
 
     &__desktoplinks {
@@ -68,9 +62,6 @@
 }
 
 .hamburger.open {
-    span {
-        background-color: $color-light;
-    }
 
     span:nth-child(1) {
         transform: translateY(8px) rotate(135deg);

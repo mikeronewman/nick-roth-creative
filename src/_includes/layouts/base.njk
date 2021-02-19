@@ -28,7 +28,7 @@
                 {% set navPages = collections.all | eleventyNavigation %}
                 {%- for entry in navPages %}
 
-                    <a class="header__desktoplinks display-largescrn" href="{{ entry.url | url }}">{{ entry.title }}</a>
+                    <a class="header__desktoplinks display-largescrn" href="{{ entry.url | url }}">{{ entry.title |makeUppercase }}</a>
 
                 {%- endfor %}
                 </nav>

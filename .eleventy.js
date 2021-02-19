@@ -5,6 +5,10 @@ module.exports = function(eleventyConfig) {
     // Add plugins
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
+    eleventyConfig.addNunjucksFilter("makeUppercase", function(value) {
+        return value.toUpperCase();
+    });
+
     // Tells eleventy which folders should be moved into the build version
     // ---<folder-from-root>-----> build (the folder we end up deploying)-
     eleventyConfig.addPassthroughCopy("images");

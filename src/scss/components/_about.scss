@@ -1,15 +1,41 @@
 .about {
-    padding: 1rem 0.5rem;
+    max-width: $bp-tablet;
+    padding: 4rem 0;
+    margin: 0 auto;
 
     &__description {
         font-size: $font-size-h3;
-        margin: 2rem 0;
+        margin-bottom: 4rem;
         text-decoration: underline;
         text-decoration-color: $color-blue-light;
     }
 
     p {
-        margin: 0 auto 2rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: $bp-tablet) {
+    .about {
+        padding: 4rem 1rem;
+        p {
+            font-size: $font-size-h5;
+        }
+    }
+    .about__description {
+        font-size: $font-size-h2;
+    }
+}
+
+@media screen and (min-width: $bp-desktop) {
+    .about {
+        padding: 6rem 2rem;
+    }
+    .about__description {
+        font-size: $font-size-h1;
+        padding-bottom: 2rem;
+    }
+    .about__statement {
         font-size: $font-size-h5;
     }
 }
