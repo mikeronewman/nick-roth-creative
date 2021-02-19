@@ -1,6 +1,21 @@
 .portfolio {
     margin: 0 auto;
-    padding: 0;
+
+    &__link {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    &__title {
+        max-width: 90%;
+        z-index: 100;
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        padding: .5rem;
+        background-color: rgba(255, 255, 255, .15);
+    }
 
     &__image {
         display: block;

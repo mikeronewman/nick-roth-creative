@@ -5,9 +5,10 @@
     .wrapper {
         height: 100vh;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: flex-end;
         align-items: center;
-        position: relative;
+        padding-bottom: 10rem;
     }
 
     &__bgvideo {
@@ -20,19 +21,24 @@
         left: 0;
     }
 
-    &__headline {
-        width: 66%;
+    &__arrow {
+        margin: 0 auto;
+        height: 2rem; width: 2rem;
+        border-style: solid;
+        border-color: $color-light;
+        border-width: 0px 3px 3px 0px;
+        border-radius: 4px;
+        transform: rotate(45deg);
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__link:hover {
+        .hero__arrow {
+            border-color: $color-blue-dark;
+            border-bottom-width: 6px;
+            border-right-width: 6px;
+        }
     }
 
     
-    &__button {
-        position: absolute;
-        bottom: 8rem;
-    }
-}
-
-@media screen and (min-width: $bp-desktop) {
-    .hero__headline {
-        font-size: $font-size-biggest;
-    }
 }

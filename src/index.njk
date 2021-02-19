@@ -12,14 +12,15 @@ layout: layouts/base.njk
 
     <div class="wrapper">
 
-        <h1 class="hero__headline">Picture Your Perfect Day</h1>
-
-        <a class="button hero__button" href="#">EXPLORE</a>
+        <a class="hero__link" href="#about">
+            <h1 class="hero__headline">Explore</h1>
+            <div class="hero__arrow"></div>
+        </a>
        
     </div>
 </section>
 
-<main class="about">
+<main class="about" id="about">
     <div class="wrapper">
 
         <h2 class="about__description">{{ description }}</h2>
@@ -30,9 +31,13 @@ layout: layouts/base.njk
 </main>
 
 <section class="portfolio">
-    <img class="portfolio__image" src="https://res.cloudinary.com/dnnv743v6/image/upload/v1613442237/CLE_0387_valv30.jpg" alt="">
-    <img class="portfolio__image" src="https://res.cloudinary.com/dnnv743v6/image/upload/v1613442292/CLE_8152_idcy9r.jpg" alt="">
-    <img class="portfolio__image" src="https://res.cloudinary.com/dnnv743v6/image/upload/v1613442214/CLE_4244-2_qu531b.jpg" alt="">
-    <img class="portfolio__image" src="https://res.cloudinary.com/dnnv743v6/image/upload/v1613442254/IMG_8805_eq9hbh.jpg" alt="">
+    <a class="portfolio__link" href="#">
+        <h3 class="portfolio__title">Weddings</h3>
+        <img class="portfolio__image" src="https://res.cloudinary.com/dnnv743v6/image/upload/v1613442292/CLE_8152_idcy9r.jpg" alt="">
+    </a>
+    <a class="portfolio__link" href="#">
+        <h3 class="portfolio__title">Video</h3>
+        <img class="portfolio__image" src="https://res.cloudinary.com/dnnv743v6/image/upload/v1613442237/CLE_0387_valv30.jpg" alt="">
+    </a>
 </section>
 
