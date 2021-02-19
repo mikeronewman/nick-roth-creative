@@ -5,6 +5,7 @@
 
     &__description {
         font-size: $font-size-h3;
+        margin-top: 1rem;
         margin-bottom: 4rem;
         text-decoration: underline;
         text-decoration-color: $color-blue-light;
@@ -24,6 +25,7 @@
     }
     .about__description {
         font-size: $font-size-h2;
+        margin-top: 2rem;
     }
 }
 

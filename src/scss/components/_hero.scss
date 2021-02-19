@@ -38,7 +38,13 @@
             border-bottom-width: 6px;
             border-right-width: 6px;
         }
-    }
+    } 
+}
 
-    
+@media screen and (min-width: $bp-tablet) {
+    .hero {
+        .wrapper {
+            padding-bottom: 6rem;
+        }
+    }
 }
