@@ -1,16 +1,16 @@
 .portfolio {
-    margin: 4rem auto;
-    text-align: center;
+    margin: 0 auto;
+    padding: 0;
 
-    .wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        margin-top: 4rem;
+    &__image {
+        display: block;
     }
 
-    .button {
-        margin-bottom: 5rem;
-    }
+}
 
+@media screen and (min-width: $bp-desktop) {
+    .portfolio__image {
+        width: 50%;
+        margin: 2rem auto;
+    }
 }

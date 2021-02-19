@@ -1,0 +1,15 @@
+.about {
+    padding: 1rem 0.5rem;
+
+    &__description {
+        font-size: $font-size-h3;
+        margin: 2rem 0;
+        text-decoration: underline;
+        text-decoration-color: $color-blue-light;
+    }
+
+    p {
+        margin: 0 auto 2rem;
+        font-size: $font-size-h5;
+    }
+}

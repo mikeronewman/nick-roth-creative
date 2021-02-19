@@ -56,7 +56,7 @@
         display: block;
         width: 27px;
         height: 2px;
-        background-color: $color-light;
+        background-color: $color-blue-dark;
         transition: all 0.4s ease-in;
     }
 
@@ -66,10 +66,6 @@
 }
 
 .hamburger.open {
-    span {
-        background-color: $color-blue-dark;
-    }
-
     span:nth-child(1) {
         transform: translateY(8px) rotate(135deg);
     }

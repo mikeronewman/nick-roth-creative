@@ -1,19 +1,17 @@
 .button {
     font-family: $font-heading;
-    color: $color-light;
+    background-color: $color-blue-dark;
     text-align: center;
-    border: 2px solid $color-light;
+    letter-spacing: .5px;
     padding: 5px 15px;
     border-radius: 15px;
     box-shadow: 2px 2px 2px 1px (rgba(0,0,0,0.3));
-    transition: translateY 0.1s;
+    transition: all 0.1s;
 }
 
 .button:hover,
 .button:active,
 .button:focus {
-    color: $color-blue-dark;
-    border-color: $color-blue-dark;
 }
 
 .button:active {
