@@ -24,13 +24,11 @@ a {
     user-select: none;
 }
 
-a:hover,
-a:active,
-a:focus {
-    color: $color-blue-dark;
-    border-color: $color-blue-dark;
-}
-
 img {
     max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
 }

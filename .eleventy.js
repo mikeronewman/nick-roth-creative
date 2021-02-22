@@ -1,9 +1,6 @@
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-
 module.exports = function(eleventyConfig) {
 
     // Add plugins
-    eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
     eleventyConfig.addNunjucksFilter("makeUppercase", function(value) {
         return value.toUpperCase();

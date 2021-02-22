@@ -20,36 +20,62 @@
     <header class="header blurred" id="header">
         <div class="wrapper">
             <a class="header__title" href="/"><h2>Nick Roth | Creative</h2></a>
-            
-            <nav>
-                <a class="button header__contactbtn" href="/contact">CONTACT</a>
+            <a class="button header__contactbtn" href="/contact">CONTACT</a>
 
-                <nav class="display-largescreen">
-                {% set navPages = collections.all | eleventyNavigation %}
-                {%- for entry in navPages %}
+			<nav class="display-largescreen">
+				<ul>
+					<li>
+						<a class="header__desktoplinks hoverable display-largescrn" href="/about/">ABOUT</a>
+					</li>
+					<li id="has-submenu">
+						<span class="header__desktoplinks hoverable display-largescrn" >GALLERIES</span>
+						<ul class="submenu" id="submenu">
+							<li>
+								<a class="header__desktoplinks hoverable display-largescrn" href="/galleries/weddings/">WEDDINGS</a>
+							</li>
+							<li>
+								<a class="header__desktoplinks hoverable display-largescrn" href="/galleries/engagements/">ENGAGEMENTS</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="header__desktoplinks hoverable display-largescrn" href="/videos/">VIDEOS</a>
+					</li>
+				</ul>
 
-                    <a class="header__desktoplinks display-largescrn" href="{{ entry.url | url }}">{{ entry.title |makeUppercase }}</a>
+			</nav>
 
-                {%- endfor %}
-                </nav>
+			<div class="hamburger hidden-largescrn" id="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 
-                <div class="hamburger hidden-largescrn" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <nav class="overlay hidden-largescrn" id="overlay">
-                    {% set navePages = collections.all | eleventyNavigation %}
-                    {%- for entry in navPages %}
-
-                        <a class="overlay__links hidden-largescrn" href="{{ entry.url | url }}">{{ entry.title }}</a>
-
-                    {%- endfor %}                
-
-                </nav>
-
-            </nav>
+			{# <nav class="overlay hidden-largescrn" id="overlay"> #}
+				<ul class="overlay hidden-largescrn" id="overlay">
+					<li>
+						<a class="overlay__links hoverable hidden-largescrn" href="/about/">ABOUT</a>
+					</li>
+					<li id="has-submenu">
+						<span class="overlay__links hoverable hidden-largescrn">GALLERIES</span>
+						<ul class="submenu" id="submenu">
+							<li>
+								<a class="overlay__links hoverable hidden-largescrn" href="/galleries/weddings/">WEDDINGS</a>
+							</li>
+							<li>
+								<a class="overlay__links hoverable hidden-largescrn" href="/galleries/engagements/">ENGAGEMENTS</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="overlay__links hoverable hidden-largescrn" href="/videos/">VIDEOS</a>
+					</li>
+					<li>
+						<a class="overlay__links hoverable hidden-largescrn" href="/contact/">CONTACT</a>
+					</li>
+				</ul>												
+	              
+			{# </nav> #}
         </div>
     </header>
 
@@ -60,8 +86,6 @@
         <p>&copy; 2021 nickrothcreative.com</p>
         
     </footer>
-
-    <script src="../js/main.js"></script>
 
     <script>
         if (window.netlifyIdentity) {
@@ -78,6 +102,12 @@
         const hamburger = document.getElementById('hamburger');
         const overlay = document.getElementById('overlay');
         const header = document.getElementById('header');
+		const hasSubmenu = document.getElementById('has-submenu');
+		const submenu = document.getElementById('submenu');
+
+		hasSubmenu.addEventListener('click', event => {
+			submenu.classList.toggle('opened');
+		});
 
         hamburger.onclick = function() {
             console.log('clicked!!');
