@@ -1,3 +1,8 @@
+.hoverable {
+    overflow: hidden;
+    position: relative;
+}
+
 .hoverable:before { // helper class that adds hover, focus and active underlining
     content: '';
     position: absolute;
@@ -7,15 +12,15 @@
     height: 2px;
     background: $color-blue-dark; 
     bottom: 0;
-    opacity: 0;
     transform: translateX(-100%);
+    opacity: 0;
 }
 
 .hoverable:hover:before,
 .hoverable:active:before,
 .hoverable:focus:before {
-    opacity: 1;
     transform: translateX(0);
+    opacity: 1;
 }
 
 @media screen and (min-width: $bp-desktop) {

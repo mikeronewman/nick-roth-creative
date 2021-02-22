@@ -40,16 +40,6 @@
         transition: all 0.3s ease-out;
     }
 
-    &__link:hover,
-    &__link:active,
-    &__link:focus {
-        .portfolio__image {
-            filter: grayscale(1);
-        }
-        .portfolio__link__text {
-            color: $color-blue-light;
-        }
-    }
 
 }
 
