@@ -96,6 +96,9 @@
 }
 
 .hamburger.open {
+    span {
+        background-color: $color-light;
+    }
 
     span:nth-child(1) {
         transform: translateY(8px) rotate(135deg);

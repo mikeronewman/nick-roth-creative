@@ -11,10 +11,8 @@
     justify-content: center;
 
     text-align: right;
-    background-color: $color-light;
-    //background-color: rgba(230, 223, 208, .20);
-    // backdrop-filter: blur(4px);
-    color: $color-blue-dark;
+    background-color: rgba(29, 53, 87, .80);
+    color: $color-light;
 
     transform: translateX(105%);
     transition: transform 0.5s cubic-bezier(0.25, 1.05, 0.35, 1.10);
