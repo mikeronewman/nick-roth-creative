@@ -6,7 +6,7 @@
 .hoverable:before { // helper class that adds hover, focus and active underlining
     content: '';
     position: absolute;
-    transition: all .3s ease;
+    transition: all .4s cubic-bezier(0.25, 1.05, 0.35, 1.10);
     left: 0;
     width: 100%;
     height: 2px;

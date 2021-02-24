@@ -56,9 +56,9 @@
 					<li>
 						<a class="overlay__links hoverable hidden-largescrn" href="/about/">ABOUT</a>
 					</li>
-					<li id="has-submenu">
-						<span class="overlay__links hoverable hidden-largescrn">GALLERIES</span>
-						<ul class="submenu" id="submenu">
+					<li class="overlay__has--submenu">
+						<span class="overlay__links hoverable hidden-largescrn" id="has-overlay-submenu">GALLERIES</span>
+						<ul class="overlay__submenu" id="overlay-submenu">
 							<li>
 								<a class="overlay__links hoverable hidden-largescrn" href="/galleries/weddings/">WEDDINGS</a>
 							</li>
@@ -87,33 +87,7 @@
         
     </footer>
 
-    <script>
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                        document.location.href = "/admin/";
-                    });
-                }
-            });
-        }
+    <script src="/js/main.js"></script>
 
-        // Hamburger and mobile menu animations
-        const hamburger = document.getElementById('hamburger');
-        const overlay = document.getElementById('overlay');
-        const header = document.getElementById('header');
-		const hasSubmenu = document.getElementById('has-submenu');
-		const submenu = document.getElementById('submenu');
-
-		hasSubmenu.addEventListener('click', event => {
-			submenu.classList.toggle('opened');
-		});
-
-        hamburger.onclick = function() {
-            console.log('clicked!!');
-            hamburger.classList.toggle('open');
-            overlay.classList.toggle('opened');
-        }
-    </script>
 </body>
 </html>

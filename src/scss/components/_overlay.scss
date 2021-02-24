@@ -19,17 +19,47 @@
 
     li {
         position: relative;
+        margin-bottom: 2rem;
+
+        span.active {
+            opacity: 0.5;
+        }
     }
 
-    li:not(last-child) {
-        margin-bottom: 2rem;
+    li:last-child {
+        margin-bottom: 0;
     }
 
     &__links {
         font-family: $font-heading;
-        font-size: $font-size-h4;
+        font-size: $font-size-h5;
         text-transform: uppercase;
         margin-right: 2rem;
+    }
+
+    &__links:before {
+        background-color: $color-light;
+    }
+
+    &__has--submenu {
+        margin-bottom: 0;
+    }
+
+    &__submenu {
+        display: none;
+
+        li {
+            margin-bottom: 8px;
+            a {
+                font-size: 0.833rem;
+            }
+        }
+
+    }
+
+
+    &__submenu.opened {
+        display: block;
     }
 
 }
