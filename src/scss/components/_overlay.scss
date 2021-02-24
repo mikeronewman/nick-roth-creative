@@ -11,8 +11,9 @@
     justify-content: center;
 
     text-align: right;
-    background-color: rgba(230, 223, 208, .20);
-    backdrop-filter: blur(4px);
+    background-color: $color-light;
+    //background-color: rgba(230, 223, 208, .20);
+    // backdrop-filter: blur(4px);
     color: $color-blue-dark;
 
     transform: translateX(105%);
