@@ -19,7 +19,7 @@
 
     li {
         position: relative;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
 
         span.active {
             opacity: 0.5;
@@ -49,9 +49,9 @@
         display: none;
 
         li {
-            margin-bottom: 8px;
+            margin: 1rem 0;
             a {
-                font-size: 0.833rem;
+                font-size: 1rem;
             }
         }
 
