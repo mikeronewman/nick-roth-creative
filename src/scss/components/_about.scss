@@ -1,15 +1,17 @@
 .home__about {
     width: 100%;
-    background: url(https://res.cloudinary.com/dnnv743v6/image/upload/v1613764023/470A1790_h9jxmf.jpg)
-                 no-repeat center center;
+    background: url(https://res.cloudinary.com/dnnv743v6/image/upload/q_auto/v1614271353/470A1790_h9jxmf.jpg) 
+                    no-repeat center center;
     background-size: cover;
-    margin: .5rem auto;
+    margin: 0 auto;
+    border-top: 2px solid $color-blue-dark;
     padding: 20rem 0 0 ;
+    box-shadow: rgb(38, 57, 77) inset 0px 20px 30px -10px;
     .wrapper {
         background-color: rgba(29, 53, 87, .70);
         backdrop-filter: blur(2px);
         color: $color-light;
-        padding: 1rem;
+        padding: 2rem;
         max-width: $bp-tablet;
         border: 2px solid $color-blue-dark;
         box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
