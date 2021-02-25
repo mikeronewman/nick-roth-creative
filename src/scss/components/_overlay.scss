@@ -67,3 +67,9 @@
 .overlay.opened {
     transform: translateX(0);
 }
+
+@media screen and (min-width: $bp-tablet) {
+    .overlay__links {
+        font-size: $font-size-h4;
+    }
+}

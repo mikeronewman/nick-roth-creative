@@ -1,6 +1,6 @@
 // Variables for Google Fonts font stacks
-$font-heading: 'Raleway', sans-serif;
-$font-body: 'Bitter', serif; 
+$font-heading: 'PT Sans', sans-serif;
+$font-body: 'Noto Serif', serif; 
 
 // Variables for type scale
 $font-size-biggest: 2.986rem;
@@ -18,8 +18,8 @@ h1, h2, h3, h4, h5, h6, p {
 // Set Heading font for heading elements
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-heading;
-    font-weight: 400;
     line-height: 1.1;
+    font-weight: 400;
 }
 
 p {
