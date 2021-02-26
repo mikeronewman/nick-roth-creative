@@ -1,81 +1,35 @@
-.portfolio {
+.home__portfolio {
     margin-bottom: 5rem;
 
-    &__title {
-        text-align: center;
-        padding: 1rem 0;
+    &__tabs {
+        width: 100%;
+        display: flex;
     }
 
-    &__title::before,
-    &__title::after {
+    &__tab {
+        width: 50%;
+    }
+
+    &__tab:nth-child(2) {
+        text-align: right;
+    }
+
+    &__tab::before,
+    &__tab::after {
         content: "";
         display: block;
-        width: 100%;
+        margin: 2rem 0;
         height: 2px;
-        margin: 2rem auto;
-        background-color: $color-blue-light;
+        opacity: 0.6;
+        background: linear-gradient(66deg, $color-blue-light, $color-blue-medium 55%);
     }
 
-    &__link {
-        display: block;
-        position: relative;
-        margin-bottom: 4rem;
+    &__tab:nth-child(2)::before,
+    &__tab:nth-child(2)::after {
+        background: linear-gradient(66deg, $color-blue-medium, $color-blue-light 55%);
     }
 
-    &__image {
-        transition: all 0.3s ease-out;
-    }
 
-    &__link__text {
-        z-index: 69;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        background-color: rgba(230, 223, 208, .10);
-        backdrop-filter: blur(4px);
-        margin: 2rem;
-        padding: 1rem;
-        font-size: $font-size-h5;
-        color: $color-blue-dark;
-        transition: all 0.3s ease-out;
-    }
-}
-
-@media screen and (min-width: $bp-tablet) {
-    .portfolio {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1rem;
-
-        &__title {
-            grid-column: 1 / 3;
-        }
-
-    }
-}
-
-@media screen and (min-width: $bp-desktop-large) {
-    .portfolio {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        margin-top: 4rem;
-
-        &__link--weddings {
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
-        }
-
-        &__title {
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
-            place-self: center;
-        }
-
-        &__link--engagements {
-            grid-column: 3 / 4;
-            grid-row: 1 / 2;
-        }
-    }
 }
 
 

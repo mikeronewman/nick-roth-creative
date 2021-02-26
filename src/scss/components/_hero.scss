@@ -1,6 +1,7 @@
 .hero {
     text-align: center;
     color: $color-light;
+    border-bottom: 2px solid $color-blue-medium;
 
     .wrapper {
         height: 100vh;
@@ -19,7 +20,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        box-shadow: rgb(38, 57, 77) 0px 16px 32px -8px;
+        box-shadow: $my-box-shadow;
     }
 
     &__arrow {

@@ -1,6 +1,6 @@
 // Variables for Google Fonts font stacks
 $font-heading: 'PT Sans', sans-serif;
-$font-body: 'Noto Serif', serif; 
+$font-body: 'Cabin', serif; 
 
 // Variables for type scale
 $font-size-biggest: 2.986rem;
@@ -18,14 +18,13 @@ h1, h2, h3, h4, h5, h6, p {
 // Set Heading font for heading elements
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-heading;
-    line-height: 1.1;
-    font-weight: 400;
+    line-height: 1.05;
 }
 
 p {
     font-family: $font-body;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.5;
     text-indent: 2rem;
 }
 
@@ -41,22 +40,32 @@ h3 {
     font-size: $font-size-h3;
 }
 
-.header__title h2 {
+.header__title {
+    font-family: $font-heading;
+    font-weight: 400;
     font-size: $font-size-h5;
 }
 
+.home__description {
+    font-size: $font-size-h3;
+}
+
 @media screen and (min-width: $bp-tablet) {
-    .header__title h2 {
+    .header__title {
         font-size: $font-size-h4;
     }
 
-    .portfolio__description {
+    .home__description {
         font-size: $font-size-h2;
     }
 }
 
 @media screen and (min-width: $bp-desktop) {
-    .header__title h2 {
+    .header__title {
         font-size: $font-size-h3;
+    }
+
+    .home__description {
+        font-size: $font-size-h1;
     }
 }
