@@ -25,7 +25,8 @@
     }
 
     &__carousel {
-        margin: 4rem 0;
+        max-width: 600px;
+        margin: 4rem auto;
         display: flex;
         box-shadow: $my-box-shadow;
         position: relative;
@@ -35,6 +36,10 @@
             max-width: 100%;
             z-index: -1;
         }
+    }
+
+    &__quote {
+        margin: 0 auto;
     }
 }
 
@@ -78,9 +83,18 @@
             font-size: $font-size-h4;
         }
     }
+
+    .home__quote {
+        font-size: $font-size-h5;
+        max-width: 600px;
+    }
 }
 
 @media screen and (min-width: $bp-desktop) {
+    .home__carousel {
+        max-width: 800px;
+    }
+
     .home__description {
         max-width: 600px;
         margin: 8rem auto;
@@ -91,5 +105,10 @@
         h3 {
             font-size: $font-size-h3;
         }
+    }
+
+    .home__quote {
+        font-size: $font-size-h4;
+        max-width: 800px;
     }
 }
