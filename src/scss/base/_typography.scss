@@ -28,6 +28,10 @@ p {
     text-indent: 1rem;
 }
 
+p:not(:first-child) {
+    margin-top: 1rem;
+}
+
 h1 {
     font-size: $font-size-h1;
 }

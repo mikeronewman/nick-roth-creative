@@ -4,7 +4,8 @@
   "description": "Portfolio website for Nick Roth Creative wedding photogrophy",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "eleventy",
+    "serve": "eleventy --serve"
   },
   "author": "Michael Newman",
   "license": "MIT",

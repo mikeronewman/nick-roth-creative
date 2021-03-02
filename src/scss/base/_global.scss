@@ -24,6 +24,10 @@ a {
     user-select: none;
 }
 
+a:active {
+    background-color: transparent;
+}
+
 img {
     max-width: 100%;
 }
@@ -35,6 +39,7 @@ ul {
 
 hr {
     border: 2px solid rgba(168, 218, 220, 0.5);
+    margin: 2px 0;
 }
 
 .hr-dark {

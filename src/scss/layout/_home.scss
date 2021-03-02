@@ -5,7 +5,7 @@
     }
 
     &__cardbox {
-        margin: 4rem auto;
+        margin: 0 auto 2rem;
         width: 75%;
     }
 
@@ -14,6 +14,7 @@
         margin: 0 4px;
 
         h3 {
+            font-size: $font-size-h5;
             text-align: center;
             margin: 4rem 0 0;
         }
@@ -26,21 +27,36 @@
 
     &__carousel {
         max-width: 600px;
-        margin: 4rem auto;
-        display: flex;
+        margin: 2rem auto;
         box-shadow: $my-box-shadow;
         position: relative;
-        overflow: hidden;
-        img {
-            width: 100%;
-            max-width: 100%;
-            z-index: -1;
-        }
+        display: flex;
     }
 
     &__quote {
-        margin: 0 auto;
+        text-align: center;
+        font-size: $font-size-h3;
+        margin: 2rem auto;
     }
+}
+
+.carousel__image--1,
+.carousel__image--2,
+.carousel__image--3 {
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+}
+
+.carousel__image--2 {
+    transform: translateX(-100%);
+}
+
+.carousel__image--3 {
+    transform: translateX(-200%);
+}
+
+.carousel__image--active {
+    opacity: 1;
 }
 
 

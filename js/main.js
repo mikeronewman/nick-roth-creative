@@ -23,3 +23,31 @@ hamburger.onclick = function() {
     hamburger.classList.toggle('open');
     overlay.classList.toggle('opened');
 }
+
+
+// CAROUSEL STUFF
+const prevBtn = document.getElementById('carouselPrev');
+const nextBtn = document.getElementById('carouselNext');
+let currentSlide = document.getElementById('currentSlide');
+let nextSlide = document.getElementById('currentSlide').nextElementSibling;
+
+const showPreviousSlide = (e) => {
+    console.log(e);
+}
+
+const showNextSlide = (e) => {
+    console.log(e);
+    console.log(currentSlide);
+    console.log(nextSlide);
+
+    currentSlide.classList.toggle('carousel__image--active');
+    nextSlide.classList.toggle('carousel__image--active');
+    currentSlide.id = "";
+    nextSlide.id = "currentSlide";
+    currentSlide = document.getElementById('currentSlide');
+    nextSlide = document.getElementById('currentSlide').nextElementSibling;
+}
+
+prevBtn.addEventListener('click', showPreviousSlide);
+nextBtn.addEventListener('click', showNextSlide);
+
