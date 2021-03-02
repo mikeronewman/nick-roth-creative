@@ -74,15 +74,10 @@ const showNextSlide = (e) => {
         nextSlide = slides[1];
     }
 
-    automateCarousel();
 }
 
-const automateCarousel = () => {
-    setInterval(showNextSlide, 5000);
-}
 
 prevBtn.addEventListener('click', showPreviousSlide);
 nextBtn.addEventListener('click', showNextSlide);
 
-automateCarousel();
 
