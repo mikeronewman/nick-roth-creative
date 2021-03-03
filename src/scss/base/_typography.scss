@@ -10,6 +10,10 @@ $font-size-h3: 1.728rem;
 $font-size-h4: 1.44rem;
 $font-size-h5: 1.2rem;
 
+body {
+    font-size: 16px;
+}
+
 // Reset default margin and padding for typography elements
 h1, h2, h3, h4, h5, h6, p {
     margin: 0; padding: 0;
@@ -29,7 +33,7 @@ p {
 }
 
 p:not(:first-child) {
-    margin-top: 1rem;
+    margin-top: 1.25rem;
 }
 
 h1 {
@@ -61,6 +65,16 @@ h3 {
 
     .home__description {
         font-size: $font-size-h2;
+    }
+
+    p {
+        font-size: $font-size-h5;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    p:not(:first-child) {
+        margin-top: 2.25rem;
     }
 }
 

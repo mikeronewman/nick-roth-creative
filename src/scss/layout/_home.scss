@@ -13,9 +13,8 @@
         flex: 1;
         margin: 0 4px;
 
-        h3 {
+        h3 { 
             font-size: $font-size-h5;
-            text-align: center;
             margin: 4rem 0 0;
         }
 
@@ -27,13 +26,14 @@
 
     &__carousel {
         max-width: 600px;
-        margin: 2rem auto;
+        margin: 2.4rem auto;
         box-shadow: $my-box-shadow;
         position: relative;
         display: flex;
     }
 
     &__quote {
+        margin: 2rem auto;
         text-align: center;
         font-size: $font-size-h3;
         margin: 2rem auto;
@@ -89,6 +89,10 @@
 }
 
 @media screen and (min-width: $bp-tablet) {
+    .home__description {
+        font-size: $font-size-h1;
+        max-width: 500px;
+    }
     .home__cardbox {
         width: 100%;
         display: flex;
@@ -102,8 +106,8 @@
     }
 
     .home__quote {
-        font-size: $font-size-h5;
-        max-width: 600px;
+        font-size: $font-size-h2;
+        max-width: 500px;
     }
 }
 
@@ -113,7 +117,7 @@
     }
 
     .home__description {
-        max-width: 600px;
+        font-size: $font-size-h1;
         margin: 8rem auto;
     }
 
@@ -122,10 +126,5 @@
         h3 {
             font-size: $font-size-h3;
         }
-    }
-
-    .home__quote {
-        font-size: $font-size-h4;
-        max-width: 800px;
     }
 }
