@@ -1,7 +1,12 @@
 .home {
-    &__description {
-        max-width: 400px;
-        margin: 4rem auto;
+    &__quote {
+        width: 100%;
+        background: $color-light;
+        &--text {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 4rem 0;
+        }
     }
 
     &__cardbox {
@@ -30,12 +35,6 @@
         display: flex;
     }
 
-    &__quote {
-        margin: 2rem auto;
-        text-align: center;
-        font-size: $font-size-h3;
-        margin: 2rem auto;
-    }
 }
 
 .carousel__image--1,
@@ -87,7 +86,7 @@
 }
 
 @media screen and (min-width: $bp-tablet) {
-    .home__description {
+    .home__quote--text {
         font-size: $font-size-h1;
         max-width: 500px;
     }
@@ -102,11 +101,6 @@
             font-size: $font-size-h4;
         }
     }
-
-    .home__quote {
-        font-size: $font-size-h2;
-        max-width: 500px;
-    }
 }
 
 @media screen and (min-width: $bp-desktop) {
@@ -114,7 +108,7 @@
         max-width: 800px;
     }
 
-    .home__description {
+    .home__quote--text {
         font-size: $font-size-h1;
         margin: 8rem auto;
     }

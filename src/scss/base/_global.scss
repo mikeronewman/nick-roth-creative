@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: $color-light;
+    background-color: $color-white;
     color: $color-blue-dark;
 }
 
@@ -38,10 +38,7 @@ ul {
 }
 
 hr {
-    border: 2px solid rgba(168, 218, 220, 0.5);
+    border: 1px solid rgba(29, 53, 87, 0.5);
     margin: 3px 0;
 }
 
-.hr-dark {
-    border: 1px solid rgba(29, 53, 87, 0.5);
-}
