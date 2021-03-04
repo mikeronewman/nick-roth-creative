@@ -19,7 +19,6 @@
         }
 
         img {
-            box-shadow: $my-box-shadow;
             margin: 8px 0;
         }
     }
@@ -27,7 +26,6 @@
     &__carousel {
         max-width: 600px;
         margin: 2.4rem auto;
-        box-shadow: $my-box-shadow;
         position: relative;
         display: flex;
     }
