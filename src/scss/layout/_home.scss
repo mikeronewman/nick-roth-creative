@@ -2,11 +2,18 @@
     &__quote {
         width: 100%;
         background: $color-light;
+        padding: 4rem 0;
+        p {
+            padding-top: 2rem;
+            width: 90%;
+            margin: 0 auto;
+            max-width: 400px;
+        }
         &--text {
+            text-align: center;
             width: 90%;
             max-width: 400px;
             margin: 0 auto;
-            padding: 4rem 0;
         }
     }
 
@@ -88,6 +95,7 @@
 }
 
 @media screen and (min-width: $bp-tablet) {
+    .home__quote p { max-width: 500px; }
     .home__quote--text {
         font-size: $font-size-h1;
         max-width: 500px;
@@ -112,7 +120,6 @@
 
     .home__quote--text {
         font-size: $font-size-h1;
-        padding: 8rem 0;
     }
 
     .home__card {
