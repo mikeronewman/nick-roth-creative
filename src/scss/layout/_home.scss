@@ -1,4 +1,9 @@
 .home {
+    h2 {
+        text-align: center;
+        padding: 1rem 0;
+        font-size: $font-size-h5;
+    }
     &__quote {
         width: 100%;
         background: $color-light;
@@ -10,15 +15,20 @@
             max-width: 400px;
         }
         &--text {
+            margin: 0 auto;
             text-align: center;
             width: 90%;
-            max-width: 400px;
+        }
+        &--textsmall {
+            text-align: center;
             margin: 0 auto;
+            width: 90%;
+            font-size: $font-size-h5;
         }
     }
 
     &__cardbox {
-        margin: 0 auto 2rem;
+        margin: 2rem auto;
         width: 80%;
     }
 
@@ -29,7 +39,7 @@
 
         h3 { 
             font-size: $font-size-h5;
-            margin: 2rem 0 0;
+            margin: 0;
         }
 
         img {
@@ -95,10 +105,12 @@
 }
 
 @media screen and (min-width: $bp-tablet) {
+    .home h2 {
+        font-size: $font-size-h4;
+    }
     .home__quote p { max-width: 500px; }
     .home__quote--text {
         font-size: $font-size-h1;
-        max-width: 500px;
     }
     .home__cardbox {
         width: 100%;
@@ -108,7 +120,7 @@
 
     .home__card {
         h3 {
-            font-size: $font-size-h5;
+            font-size: $font-size-h4;
         }
     }
 }
@@ -121,11 +133,16 @@
     .home__quote--text {
         font-size: $font-size-h1;
     }
-
-    .home__card {
-        margin: 0 1rem;
-        h3 {
-            font-size: $font-size-h4;
-        }
+    
+    .home__quote--textsmall {
+        font-size: $font-size-h3;
     }
+
+    .home__card:not(:last-child) {
+        margin-right: 4rem;
+    }
+    .home__card h3 {
+        font-size: $font-size-h2;
+    }
+
 }
