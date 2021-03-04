@@ -3,6 +3,7 @@
         width: 100%;
         background: $color-light;
         &--text {
+            width: 90%;
             max-width: 400px;
             margin: 0 auto;
             padding: 4rem 0;
@@ -11,15 +12,16 @@
 
     &__cardbox {
         margin: 0 auto 2rem;
-        width: 75%;
+        width: 66%;
     }
 
     &__card {
         flex: 1;
         margin: 0 4px;
+        text-align: center;
 
         h3 { 
-            font-size: $font-size-h5;
+            font-size: 16px;
             margin: 4rem 0 0;
         }
 
@@ -98,7 +100,7 @@
 
     .home__card {
         h3 {
-            font-size: $font-size-h4;
+            font-size: $font-size-h5;
         }
     }
 }
@@ -110,13 +112,13 @@
 
     .home__quote--text {
         font-size: $font-size-h1;
-        margin: 8rem auto;
+        padding: 8rem 0;
     }
 
     .home__card {
         margin: 0 1rem;
         h3 {
-            font-size: $font-size-h3;
+            font-size: $font-size-h4;
         }
     }
 }
