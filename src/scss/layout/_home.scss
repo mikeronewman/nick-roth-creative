@@ -19,7 +19,7 @@
 
     &__cardbox {
         margin: 0 auto 2rem;
-        width: 66%;
+        width: 80%;
     }
 
     &__card {
@@ -28,8 +28,8 @@
         text-align: center;
 
         h3 { 
-            font-size: 16px;
-            margin: 4rem 0 0;
+            font-size: $font-size-h5;
+            margin: 2rem 0 0;
         }
 
         img {
