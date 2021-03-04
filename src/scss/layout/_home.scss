@@ -38,8 +38,8 @@
         text-align: center;
 
         h3 { 
-            font-size: $font-size-h5;
-            margin: 0;
+            font-size: $font-size-h4;
+            margin: 0 0 1.5rem 0;
         }
 
         img {
@@ -118,10 +118,8 @@
         justify-content: space-between;
     }
 
-    .home__card {
-        h3 {
-            font-size: $font-size-h4;
-        }
+    .home__card:not(:last-child) {
+        margin-right: .5rem;
     }
 }
 
@@ -139,7 +137,7 @@
     }
 
     .home__card:not(:last-child) {
-        margin-right: 4rem;
+        margin-right: 2.5rem;
     }
     .home__card h3 {
         font-size: $font-size-h2;
