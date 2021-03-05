@@ -1,0 +1,32 @@
+.quote {
+  width: 100%;
+  background: $color-white;
+  padding: 4rem 0;
+  p {
+    padding-top: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  &__text {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+  }
+  &__text--small {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    font-size: $font-size-h4;
+  }
+}
+
+@media screen and (min-width: $bp-tablet) {
+  .quote p { max-width: 500px; }
+  .quote__text { font-size: $font-size-h1; }
+}
+
+@media screen and (min-width: $bp-desktop) {
+  .quote__text { font-size: $font-size-h1; }
+  .quote__text--small { font-size: $font-size-h3; }
+}

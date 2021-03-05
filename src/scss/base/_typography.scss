@@ -39,16 +39,16 @@ p:not(:first-child) {
 }
 
 h1 {
-    font-size: $font-size-h1;
+    font-size: $font-size-h3;
     font-weight: 200;
 }
 
 h2 {
-    font-size: $font-size-h2;
+    font-size: $font-size-h4;
 }
 
 h3 {
-    font-size: $font-size-h3;
+    font-size: $font-size-h5;
 }
 
 .header__title {
@@ -68,6 +68,10 @@ h3 {
     .home__quote--text {
         font-size: $font-size-h2;
     }
+
+    h1 { font-size: $font-size-h1; }
+    h2 { font-size: $font-size-h2; }
+    h3 { font-size: $font-size-h3; }
 
     p {
         font-size: $font-size-h5;

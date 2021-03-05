@@ -5,28 +5,6 @@
         padding: 1rem 0;
         font-size: $font-size-h5;
     }
-    &__quote {
-        width: 100%;
-        background: $color-white;
-        padding: 4rem 0;
-        p {
-            padding-top: 2rem;
-            width: 90%;
-            margin: 0 auto;
-            max-width: 400px;
-        }
-        &--text {
-            margin: 0 auto;
-            text-align: center;
-            width: 90%;
-        }
-        &--textsmall {
-            text-align: center;
-            margin: 0 auto;
-            width: 90%;
-            font-size: $font-size-h5;
-        }
-    }
 
     &__cardbox {
         margin: 2rem auto;
@@ -109,10 +87,6 @@
     .home h2 {
         font-size: $font-size-h4;
     }
-    .home__quote p { max-width: 500px; }
-    .home__quote--text {
-        font-size: $font-size-h1;
-    }
     .home__cardbox {
         width: 100%;
         display: flex;
@@ -127,14 +101,6 @@
 @media screen and (min-width: $bp-desktop) {
     .home__carousel {
         max-width: 800px;
-    }
-
-    .home__quote--text {
-        font-size: $font-size-h1;
-    }
-    
-    .home__quote--textsmall {
-        font-size: $font-size-h3;
     }
 
     .home__card:not(:last-child) {

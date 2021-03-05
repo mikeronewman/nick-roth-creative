@@ -4,11 +4,46 @@
   background-size: cover;
 }
 
+.about {
+  &__main {
+    padding: 4rem 0;
+  }
+  
+  &__parallax {
+    background-image: url("https://res.cloudinary.com/dnnv743v6/image/upload/v1614983831/_AIG8976_zuhc1g.jpg");
+    min-height: 200px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.text__box {
+  height: 100%;
+  h1 {
+    font-size: $font-size-h4;
+    text-align: right;
+  }
+  p {
+    color: $color-blue-dark;
+  }
+}
+
 @media screen and (min-width: $bp-tablet) {
   .about__hero {
     height: 50vh;
     background: url("https://res.cloudinary.com/dnnv743v6/image/upload/c_mfit,e_auto_contrast/v1613442282/CLE_4497-2_w9qdl3.jpg") no-repeat center center;
     background-size: cover;
+  }
+  .about__main {
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
   }
 }
 
