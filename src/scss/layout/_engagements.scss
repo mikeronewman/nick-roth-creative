@@ -1,0 +1,19 @@
+.engagements__hero {
+  height: 50vh;
+  background: url("https://res.cloudinary.com/dnnv743v6/image/upload/c_scale,e_auto_saturation,h_600/v1613442237/CLE_0387_valv30.jpg") no-repeat left center;
+  background-size: cover;
+}
+
+@media screen and (min-width: $bp-tablet) {
+  .engagements__hero {
+    height: 50vh;
+    background: url("https://res.cloudinary.com/dnnv743v6/image/upload/e_auto_saturation/v1613442237/CLE_0387_valv30.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: $bp-desktop) {
+  .engagements__hero {
+    height: 75vh;
+  }
+}

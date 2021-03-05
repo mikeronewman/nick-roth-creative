@@ -1,0 +1,19 @@
+.about__hero {
+  height: 50vh;
+  background: url("https://res.cloudinary.com/dnnv743v6/image/upload/c_mfit,e_auto_saturation,h_600/v1613442282/CLE_4497-2_w9qdl3.jpg") no-repeat right center;
+  background-size: cover;
+}
+
+@media screen and (min-width: $bp-tablet) {
+  .about__hero {
+    height: 50vh;
+    background: url("https://res.cloudinary.com/dnnv743v6/image/upload/c_mfit,e_auto_contrast/v1613442282/CLE_4497-2_w9qdl3.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: $bp-desktop) {
+  .about__hero {
+    height: 75vh;
+  }
+}
