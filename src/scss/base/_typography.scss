@@ -28,8 +28,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-family: $font-body;
+    color: $color-blue-medium;
     line-height: 1.5;
     text-indent: 1rem;
+    letter-spacing: -0.03rem;
 }
 
 p:not(:first-child) {
@@ -38,6 +40,7 @@ p:not(:first-child) {
 
 h1 {
     font-size: $font-size-h1;
+    font-weight: 200;
 }
 
 h2 {
